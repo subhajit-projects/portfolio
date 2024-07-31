@@ -28,7 +28,7 @@
     padding: 20px 0px;
 }
 
-ul {
+.menu > ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -36,7 +36,7 @@ ul {
     /* transform: rotateY(9deg); */
 }
 
-li {
+.menu > ul > li {
     padding: 20px 0px;
 }
 
