@@ -28,6 +28,10 @@
     padding: 20px 0px;
 }
 
+.theme_change > img {
+    width: 28px;
+}
+
 .menu > ul {
     list-style-type: none;
     padding: 0px;
