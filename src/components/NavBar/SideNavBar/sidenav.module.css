@@ -44,6 +44,21 @@
     padding: 20px 0px;
 }
 
+.menu > ul > li a {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
+.menu > ul > li a:hover {
+    color: var(--text-secondary-color);
+}
+
+.menu > ul > li img {
+    width: 28px;
+}
+
 /* .sidebar_contet > ul {
     list-style-type: none;
     padding: 10px 20px;

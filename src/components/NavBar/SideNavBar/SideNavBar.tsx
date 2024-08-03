@@ -20,11 +20,36 @@ const SideNavBar = () => {
             <div className={styles.sidebar_content}>
                 <div className={styles.menu}>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Resume</li>
-                        <li>Project</li>
-                        <li>Contact</li>
+                        <li>
+                            <a href="#home">
+                                <img src={window.location.origin+"/assets/images/home.png"} alt='resume-logo' />
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                <img src={window.location.origin+"/assets/images/about.png"} alt='resume-logo' />
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resume">
+                                <img src={window.location.origin+"/assets/images/resume.png"} alt='resume-logo' />
+                                <span>Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#project">
+                                <img src={window.location.origin+"/assets/images/project.png"} alt='resume-logo' />
+                                <span>Project</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <img src={window.location.origin+"/assets/images/contact.png"} alt='resume-logo' />
+                                <span>Contact</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className={styles.theme_change} onClick={theme_change}>{appContextData.appContextData.theme === 'theme-dark'?<img src={window.location.origin+"/assets/images/light_theme.png"} alt="change to light theme" />:<img src={window.location.origin+"/assets/images/dark_theme.png"} alt="change to dark theme" />}</div>
