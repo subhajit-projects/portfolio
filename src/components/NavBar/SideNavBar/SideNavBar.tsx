@@ -23,31 +23,31 @@ const SideNavBar = () => {
                         <ul>
                             <li>
                                 <a href="#home">
-                                    <img src={window.location.origin+"/assets/images/home.png"} alt='resume-logo' />
+                                    <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/home_light_icon.png":window.location.origin+"/assets/images/home.png"} alt='home-logo' />
                                     <span>Home</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#about">
-                                    <img src={window.location.origin+"/assets/images/about.png"} alt='resume-logo' />
+                                    <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/about_light_icon.png":window.location.origin+"/assets/images/about_dark_icon.png"} alt='about-logo' />
                                     <span>About</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#resume">
-                                    <img src={window.location.origin+"/assets/images/resume.png"} alt='resume-logo' />
+                                    <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/resume_light_icon.png":window.location.origin+"/assets/images/resume.png"} alt='resume-logo' />
                                     <span>Resume</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#project">
-                                    <img src={window.location.origin+"/assets/images/project.png"} alt='resume-logo' />
+                                    <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/project_light_icon.png":window.location.origin+"/assets/images/project.png"} alt='project-logo' />
                                     <span>Project</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#contact">
-                                    <img src={window.location.origin+"/assets/images/contact.png"} alt='resume-logo' />
+                                    <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/contact_light_icon.png":window.location.origin+"/assets/images/contact.png"} alt='contact-logo' />
                                     <span>Contact</span>
                                 </a>
                             </li>
