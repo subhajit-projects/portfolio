@@ -1,4 +1,40 @@
-.App {
+:root {
+  --background-color: rgb(225, 224, 224);
+  --text-color: black;
+
+  --background-primary-color: rgb(255, 255, 255);
+  --background-secondary-color: rgb(223, 223, 223);
+  --text-primary-color: rgb(0, 0, 0);
+  --text-secondary-color: rgb(119, 115, 115);
+}
+
+.theme-dark {
+  --background-color: black;
+  --text-color: white;
+
+  --background-primary-color: rgba(0, 0, 0, 0.87);
+  --background-secondary-color: rgb(50, 50, 50);
+
+  --text-primary-color: rgb(220, 220, 220);
+  --text-secondary-color: rgb(148, 147, 147);
+  --card-primary-bg-color: rgb(77, 77, 77);
+
+  --active-class-text-color: rgb(84, 244, 84);
+
+  
+}
+
+.page-contain {
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+  width: 100%;
+  min-height: 100vh;
+  /* float: left; */
+  transition: 1s;
+  padding: 5px 5px;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +71,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
