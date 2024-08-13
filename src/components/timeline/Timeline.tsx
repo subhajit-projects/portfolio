@@ -6,7 +6,7 @@ const Timeline = () => {
         <ul className={styles.timeline}>
             <li className={`${styles.timeline_item}`}>
                 <div className={styles.timeline_arrow}></div>
-                <div><span className={styles.year}>2024 - Present</span></div>
+                <div className={styles.active}><span className={styles.year}>2024 - Present</span></div>
                 <div className='pt-2'><span className={styles.possition}>Project Enigneer</span></div>
                 <div><span className={styles.company}>CDAC</span></div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</div>

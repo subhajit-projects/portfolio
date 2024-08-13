@@ -76,3 +76,8 @@ li.timeline_item::before {
     font-size: 15px;
     color: var(--text-secondary-color);
 }
+
+.active .year {
+    border: 1px solid var(--active-class-text-color);
+    color: var(--active-class-text-color);
+}
