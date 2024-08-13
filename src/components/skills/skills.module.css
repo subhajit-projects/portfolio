@@ -1,0 +1,27 @@
+.skills_div {
+    width: 65px;
+    height: 65px;
+    /* background-image: conic-gradient(0deg, transparent 20%, red); */
+    background: linear-gradient(162deg, rgba(200,254,97,1) 0%, rgba(119,236,55,1) 24%, rgba(44,172,140,1) 100%);
+    border-radius: 11px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    flex-direction: column;
+}
+
+.skills_div img {
+    width: 30%;
+    height: 30%;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+.rating > img {
+    width: 9px;
+    height: 9px;
+    margin: 1px;
+}
