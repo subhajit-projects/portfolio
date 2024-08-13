@@ -1,10 +1,11 @@
+import ContactDetails from "../../components/contactdetails/ContactDetails";
 import ContactForm from "../../components/contactform/ContactForm";
 
 const Contact = () => {
     return (
         <div className="row">
             <div className="col-12 col-md-6">
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-4">Address: </div>
                     <div className="col-8">West Bangal, India </div>
                 </div>
@@ -19,7 +20,8 @@ const Contact = () => {
                 <div className="row">
                     <div className="col-4">Address: </div>
                     <div className="col-8">West Bangal, India </div>
-                </div>
+                </div> */}
+                <ContactDetails />
             </div>
             <div className="col-12 col-md-6">
                 <ContactForm />
