@@ -13,8 +13,8 @@ const ProjectCard = () => {
                                 <div className="col-9">
                                     <h2>Project Name</h2>
                                 </div>
-                                <div className="col-3">
-                                    arrow
+                                <div className="col-3 d-flex justify-content-center align-items-center">
+                                    <img src={window.location.origin+"/assets/images/maximize.png"} alt="redirect" className={styles.redirect_arrow} />
                                 </div>
                             </div>
                         </div>
