@@ -1,8 +1,24 @@
 import Timeline from '../../components/timeline/Timeline';
 
 const Experience = () => {
+    const experienceData = [
+        {
+            timeYear: "2024 - Present",
+            purpose: "Project Engineer",
+            orgnizationName: "CDAC, Noida",
+            isActive: true,
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula...."
+        },
+        {
+            timeYear: "2022 - 2024",
+            purpose: "Project Engineer",
+            orgnizationName: "CDAC",
+            isActive: false,
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula...."
+        }
+    ]
     return (
-        <Timeline />
+        <Timeline data={experienceData} />
     )
 }
 
