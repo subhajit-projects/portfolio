@@ -12,7 +12,7 @@ const RightPanel = () => {
                 <div className={styles.rightpanel_card_content}>
                     <Row>
                         <Col>
-                            <section className={styles.about}>
+                            <section id="home" className={styles.about}>
                                 <div className={styles.title}>
                                     <label>Home</label>
                                     <span>Home</span>
@@ -24,7 +24,7 @@ const RightPanel = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <section className={styles.about}>
+                            <section id="about" className={styles.about}>
                                 <div className={styles.title}>
                                     <label>About Me</label>
                                     <span>About Me</span>
@@ -50,7 +50,7 @@ const RightPanel = () => {
                     </Row>
                     <Row>
                         <Col>
-                        <section id="resume" className={styles.about}>
+                        <section id="project" className={styles.about}>
                             <div className={styles.title}>
                                 <label>Projects</label>
                                 <span>Projects</span>
@@ -64,7 +64,7 @@ const RightPanel = () => {
                     </Row>
                     <Row>
                         <Col>
-                        <section id="resume" className={styles.about}>
+                        <section id="contact" className={styles.about}>
                             <div className={styles.title}>
                                 <label>Contact</label>
                                 <span>Contact</span>
