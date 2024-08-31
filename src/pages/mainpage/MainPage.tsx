@@ -8,7 +8,7 @@ import RightPanel from "../../components/rightpanel/RightPanel";
 const MainPage = () => {
     return (
         <>            
-            <NavBar className="d-sm-block d-md-none" />
+            <NavBar className="d-sm-block d-lg-none" />
             <Row>
                 <Col sm="12" md="4">
                     <LeftPanel />
@@ -16,7 +16,7 @@ const MainPage = () => {
                 <Col sm="12" md="7">
                     <RightPanel />
                 </Col>
-                <Col md="1" className="d-none d-md-block">
+                <Col md="1" className="d-none d-lg-block">
                     <SideNavBar />
                 </Col>
                 
