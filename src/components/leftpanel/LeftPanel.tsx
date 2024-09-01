@@ -6,7 +6,9 @@ const LeftPanel = () => {
         <div className={styles.leftpanel_container}>
             <div className={styles.leftpanel_card}>
                 <div className={styles.content}>
-                    <div className={styles.image}>image</div>
+                    <div className={styles.image} style={{backgroundImage: 'url("/assets/images/profile.jpeg")'}}>
+                        {/* <img src={ window.location.origin+"/assets/images/profile.jpeg" } /> */}
+                    </div>
                     <div className={styles.text}>
                         <div className={styles.title}>Subhajit Dey</div>
                         <div className={styles.short_desc}>Software dev</div>
