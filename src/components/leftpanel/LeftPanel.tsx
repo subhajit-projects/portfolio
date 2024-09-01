@@ -12,7 +12,13 @@ const LeftPanel = () => {
                     <div className={styles.text}>
                         <div className={styles.title}>Subhajit Dey</div>
                         <div className={styles.short_desc}>Software dev</div>
+
+                        <div className={styles.social}>
+                            <img src={ window.location.origin+"/assets/images/linkedin.png" } />
+                            <img src={ window.location.origin+"/assets/images/github-dark.png" } />
+                        </div>
                     </div>
+                    
                     <div className={styles.bottom}>
                         <div className={styles.buttons}>
                             <div>Download CV</div>

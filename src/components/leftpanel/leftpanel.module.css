@@ -59,6 +59,17 @@
     text-align: center;
 }
 
+.leftpanel_card > .content > .text > .social {
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.leftpanel_card > .content > .text > .social > img {
+    width: 23px;
+    margin: 0px 4px;
+}
+
 .bottom {
     position: absolute;
     bottom: 0;
