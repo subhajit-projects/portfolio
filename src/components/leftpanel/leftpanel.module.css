@@ -53,10 +53,14 @@
 .leftpanel_card > .content > .text > .title {
     text-align: center;
     font-size: 30px;
+    font-weight: 800;
+    color: rgb(54, 53, 53);
 }
 
 .leftpanel_card > .content > .text > .short_desc {
     text-align: center;
+    color: rgb(29, 24, 24);
+    font-weight: 500;
 }
 
 .leftpanel_card > .content > .text > .social {
