@@ -10,7 +10,7 @@ const RightPanel = () => {
         <div className={styles.rightpanel_container}>
             <div className={styles.rightpanel_card}>
                 <div className={styles.rightpanel_card_content}>
-                    <Row>
+                    {/* <Row>
                         <Col>
                             <section id="home" className={styles.about}>
                                 <div className={styles.title}>
@@ -21,7 +21,7 @@ const RightPanel = () => {
                             </section>
                             
                         </Col>
-                    </Row>
+                    </Row> */}
                     <Row>
                         <Col>
                             <section id="about" className={styles.about}>

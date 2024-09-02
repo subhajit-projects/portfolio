@@ -21,12 +21,12 @@ const SideNavBar = () => {
                 <div className={styles.sidebar_content}>
                     <div className={styles.menu}>
                         <ul>
-                            <li>
+                            {/* <li>
                                 <a href="#home">
                                     <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/home_light_icon.png":window.location.origin+"/assets/images/home.png"} alt='home-logo' />
                                     <span>Home</span>
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a href="#about">
                                     <img src={appContextData.appContextData.theme === 'theme-dark'?window.location.origin+"/assets/images/about_light_icon.png":window.location.origin+"/assets/images/about_dark_icon.png"} alt='about-logo' />
