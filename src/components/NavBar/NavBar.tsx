@@ -21,7 +21,7 @@ const NavBar = (args:any) => {
 
   return (
     <div>
-      <Navbar {...args} dark expand="md" sticky='top'>
+      <Navbar {...args} dark expand="lg" sticky='top'>
         <NavbarBrand href="/">reactstrap</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

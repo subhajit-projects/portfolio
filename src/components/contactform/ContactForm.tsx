@@ -1,4 +1,5 @@
-import TextBox from '../formelements/TextBox';
+import Button from '../formelements/button/Button';
+import TextBox from '../formelements/textbox/TextBox';
 import style from './contactform.module.css';
 
 const ContactForm = () => {
@@ -9,7 +10,7 @@ const ContactForm = () => {
                     <TextBox inputName="" inputType={"text"} labelName={"Full name"} />
                     <TextBox inputType={"email"} labelName={"Email Address"} />
                     <TextBox inputType={"textarea"} labelName={"Email Address"} />
-                    <button type='submit' value="submit">Submit</button>
+                   <Button labelName='Submit'/>
                 </form>
             </div>
         </div>
