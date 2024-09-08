@@ -18,7 +18,7 @@ const Education = () => {
         }
     ]
     return (
-        <Timeline data={experienceData} />
+        <Timeline data={experienceData} isLoading={false} />
     )
 }
 
