@@ -4,7 +4,8 @@ export class ServiceUrls {
         "login_url": "",
         "get_all_experience_url": "/experience/",
         "get_all_education": "/education/",
-        "get_all_skill": "/skill/"
+        "get_all_skill": "/skill/",
+        "get_about": "/about/"
     }
 
     public static getUrl(urlName: string) {
