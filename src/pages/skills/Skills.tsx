@@ -55,7 +55,7 @@ const Skills = () => {
         <>
             {data.apiData.map((skillData, key) => (
                 <div key={key} className="col-3 col-lg-2 mt-1">
-                <SkillBox uniqueKey={key} skillIconName={skillData.skillIconName} skillRating={10} />
+                <SkillBox uniqueKey={key} skillIconName={skillData.skillIconName} skillRating={skillData.skillRating} />
             </div>
             ))}
         </>
