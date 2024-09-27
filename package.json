@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://subhajit-projects.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -24,6 +25,8 @@
   "scripts": {
     "start": "env-cmd -f .env.local react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "env-cmd -f .env.production npm run build",
+    "deploy": "gh-pages -b deploy -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^8.17.1"
+    "ajv": "^8.17.1",
+    "gh-pages": "^6.1.1"
   }
 }
