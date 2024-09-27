@@ -1,6 +1,60 @@
+import { useEffect, useState } from 'react';
 import Timeline from '../../components/timeline/Timeline';
+import { ExperienceData } from '../../services/api/ExperienceData';
+import { DateFormat } from '../../utils/DateFormat';
 
 const Experience = () => {
+    const [data, setData] = useState({apiData: Array(), isLoading: false})
+    
+    useEffect(() => {
+        if(data.isLoading === false && data.apiData.length == 0) {
+            callApi()
+        }
+    });
+
+    const callApi = () => {
+        handleLoader();
+        ExperienceData(handleLoader).then(resp => {
+            let copyData = {...data};
+            let dataArray = Array();
+            if(resp !== undefined) {
+                resp.data.map((data:any, key: Number) => {
+                    let objData:any = {};
+                    objData['timeYear'] = DateFormat.doFormat(data.work_start, "YYYY") +" - "+DateFormat.doFormat(data.work_end, "YYYY")
+                    objData['purpose'] = data.designation
+                    objData['orgnizationName'] = data.company_name
+                    objData['isActive'] = data.is_continue
+                    objData['content'] = data.what_to_do
+    
+                    dataArray.push(objData);
+                })                
+            }
+            copyData['apiData'] = dataArray;
+            setData(copyData);
+            // console.log("From page: ", resp);
+        }).catch( err => {
+            let copyData = {...data};
+            let dataArray = Array();
+            let objData:any = {};
+
+            objData['timeYear'] = "0000 - 0000"
+            objData['purpose'] = "Something was wrong"
+            objData['orgnizationName'] = "";
+            objData['isActive'] = false
+            objData['content'] = "Sorry for the inconvience."
+
+            dataArray.push(objData);
+            copyData['apiData'] = dataArray;
+            setData(copyData);
+        })
+    }
+
+    const handleLoader = () => {
+        let copyData = {...data};
+        copyData.isLoading = !data.isLoading;
+        setData(copyData);
+    }
+
     const experienceData = [
         {
             timeYear: "2024 - Present",
@@ -18,7 +72,10 @@ const Experience = () => {
         }
     ]
     return (
-        <Timeline data={experienceData} />
+        <>
+        {console.log(data)}
+        <Timeline data={data.apiData} isLoading={data.isLoading} />
+        </>
     )
 }
 

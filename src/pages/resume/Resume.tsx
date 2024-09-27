@@ -1,4 +1,4 @@
-import Skills from "../../components/skills/Skills";
+import Skills from "../skills/Skills";
 import Education from "../education/Education";
 import Experience from "../experience/Experience";
 
@@ -8,36 +8,7 @@ const Resume = () => {
             <div className='col-12'>
                 <h4>Skills</h4>
                 <div className="row">
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
-                    <div className="col-3 col-lg-2 mt-1">
-                        <Skills />
-                    </div>
+                    <Skills />
                 </div>
             </div>
             <div className='col-12 col-md-6 mt-4'>

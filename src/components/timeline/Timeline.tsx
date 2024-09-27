@@ -1,4 +1,5 @@
 
+import { Placeholder } from 'reactstrap';
 import styles from './timeline.module.css';
 
 interface timeLineData {
@@ -10,23 +11,58 @@ interface timeLineData {
 }
 
 interface timeLineDataArray {
-    data: timeLineData[]
+    data: timeLineData[],
+    isLoading: Boolean
 }
 
 const Timeline = (props: timeLineDataArray) => {
     return(
         <ul className={styles.timeline}>
             {
-                props.data.map( (data, key) => (
-                    <li className={`${styles.timeline_item}`}>
-                        <div className={styles.timeline_arrow}></div>
-                        <div className={data.isActive ? styles.active : ''}><span className={styles.year}>{data.timeYear}</span></div>
-                        <div className='pt-2'><span className={styles.possition}>{data.purpose}</span></div>
-                        <div><span className={styles.company}>{data.orgnizationName}</span></div>
-                        <div>{data.content}</div>
-                        
-                    </li>
-                ) )
+                (!props.isLoading) ?
+                    props.data.map( (data, key) => (
+                        <li className={`${styles.timeline_item}`}>
+                            <div className={styles.timeline_arrow}></div>
+                            <div className={data.isActive ? styles.active : ''}><span className={styles.year}>{data.timeYear}</span></div>
+                            <div className='pt-2'><span className={styles.possition}>{data.purpose}</span></div>
+                            <div><span className={styles.company}>{data.orgnizationName}</span></div>
+                            <div>{data.content}</div>
+                            
+                        </li>
+                    ) )
+                :
+                    <>
+                        <li className={`${styles.timeline_item}`}>
+                            <div className={styles.timeline_arrow}></div>
+                            <Placeholder as="title" animation="glow">
+                                <div>
+                                    <Placeholder xs={3} />
+                                </div>
+                                <div>
+                                    <Placeholder xs={6} /> &nbsp;
+                                    <Placeholder xs={4} />
+                                    <Placeholder xs={8} /> &nbsp;
+                                    <Placeholder xs={3} />
+                                    <Placeholder xs={12} />
+                                </div>
+                            </Placeholder>
+                        </li>
+                        <li className={`${styles.timeline_item}`}>
+                            <div className={styles.timeline_arrow}></div>
+                            <Placeholder as="title" animation="glow">
+                                <div>
+                                    <Placeholder xs={3} />
+                                </div>
+                                <div>
+                                    <Placeholder xs={6} /> &nbsp;
+                                    <Placeholder xs={4} />
+                                    <Placeholder xs={8} /> &nbsp;
+                                    <Placeholder xs={3} />
+                                    <Placeholder xs={12} />
+                                </div>
+                            </Placeholder>
+                        </li>
+                    </>
             }
             
             {/* <li className={`${styles.timeline_item}`}>
